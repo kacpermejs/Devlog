@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'devlog-ng-frontend';
+  title = 'devlog-ng-frontend test node version changed';
 }
