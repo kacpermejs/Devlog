@@ -1,0 +1,31 @@
+.menu-bar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.name {
+  color: white;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.logo-area {
+  background-color: rgb(100, 100, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer-bar {
+  background-color: white;
+  width: 20px;
+  height: 100%;
+}
