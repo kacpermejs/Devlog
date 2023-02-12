@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavButtonComponent implements OnInit {
   @Input() routerLinkString?: string;
+  @Input() outsideLinkString?: string;
   @Input() buttonText?: string;
   constructor() { }
 

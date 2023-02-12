@@ -1,1 +1,6 @@
-<a class="nav-link nav-menu-link" routerLink={{routerLinkString}} routerLinkActive="active-tab">{{buttonText}}</a>
+<div *ngIf="!outsideLinkString">
+  <a class="nav-link nav-menu-link" routerLink={{routerLinkString}} routerLinkActive="active-tab">{{buttonText}}</a>
+</div>
+<div *ngIf="outsideLinkString">
+  <a class="nav-link nav-menu-link" href={{outsideLinkString}} routerLinkActive="active-tab">{{buttonText}}</a>
+</div>
