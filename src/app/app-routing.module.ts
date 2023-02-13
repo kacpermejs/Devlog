@@ -13,7 +13,7 @@ const routes: Routes = [
       .then(m => m.HomePageModule)
   },
   {
-    path: 'about',
+    path: 'contact',
     loadChildren: () => import('./pages/contact-page/contact-page.module')
       .then(m => m.ContactPageModule)
   },
