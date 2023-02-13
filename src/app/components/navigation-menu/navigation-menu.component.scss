@@ -1,12 +1,17 @@
-.menu-bar {
-  background-color: black;
-  display: flex;
-  justify-content: right;
+.marker {
+  background-color: white;
+  visibility: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 5px;
 }
 
-.menu-buttons {
-  display: flex;
-  justify-content: flex-end;
+.chess {
+  background-color: rgb(106, 106, 106);
 }
 
+.active-tab-marker {
+  visibility: visible;
+}
 

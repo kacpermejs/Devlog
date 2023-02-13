@@ -1,8 +1,19 @@
-.active-tab {
-  background-color: #ffffff;
-  color: black !important;
+.marker {
+  background-color: black;
+  visibility: hidden;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 5px;
+}
+
+.active-tab-marker {
+  visibility: visible;
+}
+
+.active-tab-link {
 }
 
 .nav-menu-link {
-  color: white;
+  color: black;
 }
