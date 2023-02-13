@@ -14,8 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'about',
-    loadChildren: () => import('./pages/about-page/about-page.module')
-      .then(m => m.AboutPageModule)
+    loadChildren: () => import('./pages/contact-page/contact-page.module')
+      .then(m => m.ContactPageModule)
   },
   {
     path: 'projects',
