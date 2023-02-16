@@ -1,14 +1,14 @@
 steps:
   # Decrypt .env file
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-    - kms
-    - decrypt
-    - --ciphertext-file=.env.enc
-    - --plaintext-file=.env
-    - --location=global
-    - --keyring=devlog-env
-    - --key=cloudbuild-env
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   args:
+  #   - kms
+  #   - decrypt
+  #   - --ciphertext-file=.env.enc
+  #   - --plaintext-file=.env
+  #   - --location=global
+  #   - --keyring=devlog-env
+  #   - --key=cloudbuild-env
 
   # Decrypt environment.ts file
   - name: 'gcr.io/cloud-builders/gcloud'
@@ -49,10 +49,10 @@ steps:
   - name: 'gcr.io/${_FIREBASE_PROJECT_ID}/firebase'
     args: ['target:apply', 'hosting', 'devlog-4ecc0', 'devlog-4ecc0', '--token', '${_FIREBASE_TOKEN}']
 
-  # - name: 'gcr.io/${_FIREBASE_PROJECT_ID}/firebase'
-  #   args: ['deploy', '--token', '${_FIREBASE_TOKEN}', '--only', 'hosting:devlog-4ecc0']
+  - name: 'gcr.io/${_FIREBASE_PROJECT_ID}/firebase'
+    args: ['deploy', '--token', '${_FIREBASE_TOKEN}', '--only', 'hosting:devlog-4ecc0']
 
-  - name: 'gcr.io/${_FIREBASE_PROJECT_ID}/npm'
-    args: ['run', 'deploy']
+  # - name: 'gcr.io/${_FIREBASE_PROJECT_ID}/npm'
+  #   args: ['run', 'deploy']
 
 timeout: 1200s
