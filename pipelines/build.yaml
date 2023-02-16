@@ -15,8 +15,8 @@ steps:
     args:
     - kms
     - decrypt
-    - --ciphertext-file=environment.ts.enc
-    - --plaintext-file=environment.ts
+    - --ciphertext-file=./src/environments/environment.ts.enc
+    - --plaintext-file=./src/environments/environment.ts
     - --location=global
     - --keyring=devlog-env
     - --key=cloudbuild-env
@@ -26,8 +26,8 @@ steps:
     args:
     - kms
     - decrypt
-    - --ciphertext-file=environment.prod.ts.enc
-    - --plaintext-file=environment.prod.ts
+    - --ciphertext-file=./src/environments/environment.prod.ts.enc
+    - --plaintext-file=./src/environments/environment.prod.ts
     - --location=global
     - --keyring=devlog-env
     - --key=cloudbuild-env
