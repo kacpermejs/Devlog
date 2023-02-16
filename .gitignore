@@ -6,6 +6,10 @@
 /out-tsc
 /bazel-out
 
+# Angular environment variables
+/src/environments/environment.ts
+/src/environments/environment.prod.ts
+
 # Node
 /node_modules
 npm-debug.log
@@ -41,3 +45,9 @@ testem.log
 .DS_Store
 Thumbs.db
 /.firebase
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
+.env

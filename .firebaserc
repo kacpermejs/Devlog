@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "devlog-4ecc0"
+  },
+  "targets": {
+    "devlog-4ecc0": {
+      "hosting": {
+        "devlog-ng-frontend": [
+          "devlog-4ecc0"
+        ]
+      }
+    }
   }
 }

@@ -13,3 +13,11 @@ export class ProjectsPageComponent implements OnInit {
   }
 
 }
+
+export interface BlogPost {
+  id?: string;
+  title?: string;
+  description?: string;
+  mainImage?: string;
+  images?: string[];
+}

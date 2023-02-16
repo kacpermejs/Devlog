@@ -1,0 +1,10 @@
+Run this commands to encrypt envorionment files after changes are made:
+
+  gcloud kms encrypt --plaintext-file=./src/environments/environment.ts --ciphertext-file=./src/environments/environment.ts.enc --location=global --keyring=devlog-env --key=cloudbuild-env
+  gcloud kms encrypt --plaintext-file=./src/environment/environment.prod.ts --ciphertext-file=./src/environments/environment.prod.ts.enc --location=global --keyring=devlog-env --key=cloudbuild-env
+
+And this for the .env:
+
+  gcloud kms encrypt --plaintext-file=.env --ciphertext-file=.env.enc --location=global --keyring=devlog-env --key=cloudbuild-env
+
+Replace encrypt with decrypt when cloning
