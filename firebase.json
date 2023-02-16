@@ -9,7 +9,7 @@
       ]
     },
     {
-      "target": "devlog-ng-frontend",
+      "target": "devlog-4ecc0",
       "public": "dist",
       "ignore": [
         "**/.*"
