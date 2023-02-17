@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting:devlog-4ecc0"
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\""
   },
   "private": true,
   "dependencies": {

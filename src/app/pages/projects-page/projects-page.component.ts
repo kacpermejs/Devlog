@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AuthService } from 'src/app/services/auth.service';
+import { BlogPostService } from 'src/app/services/blog-post.service';
 
 @Component({
   selector: 'app-projects-page',
@@ -7,17 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsPageComponent implements OnInit {
 
-  constructor() { }
+  posts!: Observable<any>;
+
+  constructor(private authService: AuthService, private blogPostService: BlogPostService) { }
 
   ngOnInit() {
+
+    this.posts = this.blogPostService.getPosts();
   }
 
 }
 
 export interface BlogPost {
-  id?: string;
+  // id?: string;
   title?: string;
-  description?: string;
-  mainImage?: string;
-  images?: string[];
+  // description?: string;
+  // mainImage?: string;
+  // images?: string[];
 }
