@@ -1,30 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
-import { BlogPostService } from 'src/app/services/blog-post.service';
+import { BlogPostService, BlogPostThumbnail } from 'src/app/services/blog-post.service';
 
 @Component({
   selector: 'app-projects-page',
   templateUrl: './projects-page.component.html',
-  styleUrls: ['./projects-page.component.css']
+  styleUrls: ['./projects-page.component.scss']
 })
 export class ProjectsPageComponent implements OnInit {
 
-  posts!: Observable<any>;
+  posts$!: Observable<BlogPostThumbnail[]>;
 
   constructor(private authService: AuthService, private blogPostService: BlogPostService) { }
 
   ngOnInit() {
 
-    this.posts = this.blogPostService.getPosts();
+    //this.posts$ = this.blogPostService.getPosts();
+    this.posts$ = this.blogPostService.getPostsMock();
   }
 
+
+
 }
 
-export interface BlogPost {
-  // id?: string;
-  title?: string;
-  // description?: string;
-  // mainImage?: string;
-  // images?: string[];
-}
+
