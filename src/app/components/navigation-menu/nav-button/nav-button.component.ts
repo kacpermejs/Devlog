@@ -6,9 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./nav-button.component.scss']
 })
 export class NavButtonComponent implements OnInit {
-  @Input() routerLinkString?: string;
-  @Input() outsideLinkString?: string;
-  @Input() buttonText?: string;
+  @Input() link?: string;
+  @Input() isOutsideLink: boolean = false;
+  @Input() text?: string;
   constructor() { }
 
   ngOnInit() {

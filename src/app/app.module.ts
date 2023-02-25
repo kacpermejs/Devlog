@@ -11,11 +11,13 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AuthService } from './services/auth.service';
+import { NavButtonComponent } from './components/navigation-menu/nav-button/nav-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationMenuComponent,
+    NavButtonComponent
    ],
   imports: [
     BrowserModule,

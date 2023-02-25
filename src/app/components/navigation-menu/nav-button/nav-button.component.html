@@ -1,8 +1,5 @@
-<div *ngIf="!outsideLinkString">
-  <a class="nav-link nav-menu-link" routerLink={{routerLinkString}} routerLinkActive="active-tab-link">{{buttonText}}</a>
-  <div class="marker" routerLink={{routerLinkString}} routerLinkActive="active-tab-marker"></div>
-</div>
-<div *ngIf="outsideLinkString">
-  <a class="nav-link nav-menu-link" href={{outsideLinkString}} routerLinkActive="active-tab-link">{{buttonText}}</a>
-  <div class="marker"></div>
-</div>
+<li class="nav-item">
+  <a *ngIf="!isOutsideLink" class="nav-link" routerLink="{{link}}" routerLinkActive="active">{{text}}</a>
+  <a *ngIf="isOutsideLink" class="nav-link" href="{{link}}" routerLinkActive="active">{{text}}</a>
+  <!-- <div class="marker" routerLink="/projects" routerLinkActive="active-tab-marker"></div> -->
+</li>

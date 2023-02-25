@@ -1,6 +1,15 @@
-<nav class="navbar fixed-top bg-dark navbar-expand-lg navbar-expand-md navbar-dark">
-  <a class="navbar-brand ms-3">Kacper Mejsner</a>
-  <button class="navbar-toggler me-2"
+
+<nav class="navbar
+            fixed-top
+            navbar-expand-lg
+            navbar-expand-md
+            navbar-dark
+            my-dark-theme
+            bar-area">
+  <!-- <a class="navbar-brand ms-2"><strong>Kacper Mejsner</strong></a> -->
+
+
+  <button class="navbar-toggler me-2 ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarToggler"
@@ -10,25 +19,20 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item ms-3">
-        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
-        <div class="marker" routerLink="/home" routerLinkActive="active-tab-marker"></div>
-      </li>
-      <li class="nav-item ms-3">
-        <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
-        <div class="marker" routerLink="/projects" routerLinkActive="active-tab-marker"></div>
-      </li>
-      <li class="nav-item ms-3">
-        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
-        <div class="marker" routerLink="/contact" routerLinkActive="active-tab-marker"></div>
-      </li>
-      <li class="nav-item me-2 ms-3">
-        <a class="nav-link" href="https://kacpermejs.github.io/ng-chess/">
-          Play chess!
-        </a>
-        <div class="marker" routerLink="/chess" routerLinkActive="active-tab-marker"></div>
-      </li>
+
+    <div class="left-spacer"></div>
+    <ul class="navbar-nav me-auto links">
+      <app-nav-button link="/home" text="Home"></app-nav-button>
+      <app-nav-button link="/projects" text="Projects"></app-nav-button>
+      <app-nav-button link="/contact" text="Contact"></app-nav-button>
+      <!-- <app-nav-button link="https://kacpermejs.github.io/ng-chess/" [isOutsideLink]="true" text="Chess"></app-nav-button> -->
     </ul>
+    <div class="socials-area">
+      <a class="btn-socials" href="https://github.com/kacpermejs">
+        <img src="./assets/github-mark-white.png">
+      </a>
+    </div>
+
+
   </div>
 </nav>
