@@ -1,3 +1,61 @@
+h1 {
+text-align: center;
+}
+
 h2 {
 text-align: center;
+}
+
+.name {
+  position: absolute;
+}
+
+section {
+  padding: 20px;
+  text-align: justify;
+}
+
+.portrait-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #EDF1D6;
+}
+
+section {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+section.intro {
+  padding-top: 100px;
+  background-color: #9DC08B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 25px -12px rgba(66, 68, 90, 1);
+}
+
+section.skills {
+  background-color: #609966;
+  box-shadow: 0px 8px 25px -12px rgba(66, 68, 90, 1);
+
+
+}
+
+.skill-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hobbies {
+  background-color: #40513B;
+  box-shadow: 0px 8px 25px -12px rgba(66, 68, 90, 1);
+  color: rgba(255, 255, 255, 0.6);
 }

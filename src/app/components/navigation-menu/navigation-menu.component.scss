@@ -1,30 +1,7 @@
 .bar-area {
   z-index: 1000;
-}
-
-.marker {
-  background-color: white;
-  visibility: hidden;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  height: 5px;
-}
-
-.nav-item{
-  width: fit-content;
-}
-
-.spacing-auto {
-  margin-left: auto;
-}
-
-.chess {
-  background-color: rgb(106, 106, 106);
-}
-
-.active-tab-marker {
-  visibility: visible;
+  background-color: #609966;
+  box-shadow: 0px 8px 25px -12px rgba(66, 68, 90, 1);
 }
 
 .btn-socials {
@@ -39,18 +16,21 @@
     width: inherit;
     height: inherit;
     object-fit: contain;
-    filter: brightness(0.55);
+    filter: brightness(0.3);
   }
 
-  img:hover {
-    filter: brightness(1);
+  &:hover {
+    filter: brightness(0.8);
   }
+
 
 }
 
 
 .links {
   margin-left: 10px;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 

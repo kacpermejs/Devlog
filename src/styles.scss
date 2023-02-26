@@ -2,6 +2,19 @@
 body {
   overflow-y: scroll;
 }
+
+hr {
+  border-style: none;
+  border-left-style: dotted;
+  border-width: 10px;
+  width: 0px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .my-font {
   font-family: monospace;
 }
@@ -10,11 +23,7 @@ body {
   color: white;
 }
 .my-light-theme {
-  background-color: rgb(223, 223, 223);
-  color: rgb(28, 28, 28);
-}
-
-.main-content-container {
-  padding-top: 100px;
+  background-color: #EDF1D6;
+  color: rgba(0, 0, 0, 0.559);
 }
 
