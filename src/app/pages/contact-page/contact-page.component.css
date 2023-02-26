@@ -1,0 +1,15 @@
+
+
+section {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+section.contact-form-area {
+  padding-top: 100px;
+  background-color: #9DC08B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 25px -12px rgba(66, 68, 90, 1);
+}
