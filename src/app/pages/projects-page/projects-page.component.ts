@@ -16,8 +16,8 @@ export class ProjectsPageComponent implements OnInit {
 
   ngOnInit() {
 
-    //this.posts$ = this.blogPostService.getPosts();
-    this.posts$ = this.blogPostService.getPostsMock();
+    this.posts$ = this.blogPostService.getPosts();
+    //this.posts$ = this.blogPostService.getPostsMock();
   }
 
 
