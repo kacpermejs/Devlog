@@ -3,10 +3,10 @@
 section {
   border-radius: 20px;
   margin: 20px;
+  padding: 1rem;
 }
 
 section.contact-form-area {
-  padding-top: 100px;
   background-color: #9DC08B;
   display: flex;
   justify-content: center;
