@@ -6,9 +6,17 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 section {
   margin: 0 10px 0 10px;
   gap: 10px;
+
+  h2 {
+    font-size: 50px !important;
+  }
 }
 
 .card {
@@ -42,27 +50,26 @@ section {
   }
 }
 
-.section-title {
+.projects {
 
-  font-size: 50px !important;
+  .project-thesis {
+    background-color: #40513B;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .project-plant {
+    background-color: #609966
+  }
 
 
+  .project-bush {
+    background-color: #9DC08B;
+
+  }
 }
 
-.projects-thesis {
-  background-color: #40513B;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.projects-plant {
-  background-color: #609966
-}
 
 
-.projects-bush {
-  background-color: #9DC08B;
-
-}
 .hobbies {
   background-color: #40513B;
   color: rgba(255, 255, 255, 0.6);
